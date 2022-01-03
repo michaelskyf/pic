@@ -54,11 +54,11 @@ int main()
 	{
 		if(proc_rec_y > (unsigned int)proc_rec_y)
 		{
-			part = rectangle_y;
-			full = proc_rec_x;
-		} else {
 			fprintf(stderr, "x or y not dividable by %d\n", NUM_PROC);
 			exit(-1);
+		} else {
+			part = rectangle_y;
+			full = proc_rec_x;
 		}
 	} else {
 		part = proc_rec_x;
